@@ -1,0 +1,28 @@
+body{
+    background-color: #01AAFF;
+}
+.boton{
+    height: 30px;
+    background-color:blanchedalmond;
+
+}
+
+.borrar{
+    margin: 10px;
+    height: 30px;
+    background-color: #FFD501;
+
+}
+
+.titulos{
+    display: flex;
+    gap: 184px;
+}
+.input{
+    display: flex;
+    gap: 19px;
+}
+.tareaAlgunMomento{
+    display: flex;
+    gap: 19px;
+}
