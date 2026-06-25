@@ -13,6 +13,12 @@ body{
     background-color: #FFD501;
 
 }
+.borrares{
+    margin: 10px;
+    height: 30px;
+    background-color: #FFD501;
+
+}
 
 .titulos{
     display: flex;
