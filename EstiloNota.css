@@ -3,11 +3,17 @@ body{
 }
 .boton{
     height: 30px;
-    background-color:blanchedalmond;
+    background-color:brown;
 
 }
 
 .borrar{
+    margin: 10px;
+    height: 30px;
+    background-color: white;
+
+}
+.borrares{
     margin: 10px;
     height: 30px;
     background-color: #FFD501;
@@ -25,4 +31,8 @@ body{
 .tareaAlgunMomento{
     display: flex;
     gap: 19px;
+}
+.ul{
+    display: flex;
+    gap: 184px;
 }
