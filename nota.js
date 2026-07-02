@@ -36,7 +36,7 @@ const texto = input.value
 const borrar = document.createElement("button")
 
     borrar.Id = "botonera"
-    
+    borrar.textContent = "borrar"
     borrar.className = "borrar"
     li.appendChild(borrar)
     borrar.onclick = function () {
@@ -58,36 +58,13 @@ localStorage.setItem("tareas", JSON.stringify(tareas))
  input.value = ""
 }
 input.addEventListener("keydown" ,presionarBotonera)
-
 function presionarBotonera (presionar){
     if(presionar.key === "Enter"){
         agregarTarea()
     }
-
-    console.log(nuevaTarea)}
-input.addEventListener("keydown", presionarBoton)
-function agregarTareaAlgun(){
-if(input02.value.trim() === ""){
-    return
-};
-
-const list = document.createElement("li")
-const text1 = input02.value
-
-    list.textContent = text1
-    listado2.appendChild(list)
-    input02.value = ""
-
-
-const boton = document.createElement("button")
-    boton.classList = "borrar"
-    boton.textContent = "borrar"
-    boton.onclick = function(){
-    list.remove()
 }
-    list.appendChild(boton)
 
-}
+
 input02.addEventListener("keydown", presionarBoton)
 function presionarBoton(presionar){
     if(presionar.key == "Enter"){
@@ -103,14 +80,14 @@ function agregarTareaAlgun(){
 //creación de lista
 const list = document.createElement("li")
 const text1 = input02.value
-         borrar.Id = "botonera"
+        
         list.textContent = text1
         listado2.appendChild(list)
         input02.value = ""
 // boton de borrar
 const botonera = document.createElement("button")
         botonera.textContent = "borrar"
-        botonera.className = "borrares"
+        botonera.className = "borrar"
         list.appendChild(botonera)
         botonera.onclick = function(){
             list.remove()}
@@ -122,15 +99,3 @@ function presionarBotonAlgun(presionar){
        agregarTareaAlgun()
     }
 }
-
-// Cada vez que agregues o elimines una tarea, llamá a una función
-function guardarTareas() {
-    localStorage.setItem("tarea", listado1.innerHTML);
-    localStorage.setItem("tareaAlgunMomento", listado2.innerHTML);
-}
-
-
-window.onload = function () {
-    listado1.innerHTML = localStorage.getItem("tarea") || "";
-    listado2.innerHTML = localStorage.getItem("tareaAlgunMomento") || "";
-};
