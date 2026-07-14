@@ -4,7 +4,7 @@ const input = document.getElementById("tarea")
 const input02 = document.getElementById("tareaAlgunMomento")
 const listado1 = document.getElementById("lista")
 const listado2 = document.getElementById("listaAlgun")
-
+////////////////////////guardar en el local de la PC Las notas de Tareas algun////////////////////
 let tareasAlgun = JSON.parse (localStorage.getItem("tareasAlgun"))|| []
 tareasAlgun.forEach(function(tarea){
 
@@ -22,6 +22,7 @@ tareasAlgun.forEach(function(tarea){
             });
             localStorage.setItem("tareasAlgun", JSON.stringify(tareas))
             }})
+////////////////////////guardar en el local de la PC Las notas de Tareas hoy ////////////////////
 let tareas = JSON.parse (localStorage.getItem("tareas"))|| [] //Obtener las tareas, convertirlas nuevamente en un array y, si no existen, crear un array vacío.
 
 tareas.forEach(function(tarea){
