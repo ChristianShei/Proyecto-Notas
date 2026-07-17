@@ -20,6 +20,7 @@ body{
 
 }
 
+<<<<<<< HEAD
 .titulos{
     display: flex;
     gap: 184px;
@@ -28,6 +29,10 @@ body{
     display: flex;
     gap: 46px;
 }
+=======
+
+
+>>>>>>> e766ce2c69a08adbef4859b51dcd6b3dafca8628
 .tareaAlgunMomento{
     display: flex;
     gap: 19px;
@@ -35,4 +40,18 @@ body{
 .ul{
     display: flex;
     gap: 184px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.columna{
+    width: 150%;
+}
+
+.columna ul{
+    padding-left: 20px;
 }
