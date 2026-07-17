@@ -16,7 +16,7 @@ body{
 .borrares{
     margin: 10px;
     height: 30px;
-    background-color: #FFD501;
+    background-color: white;
 
 }
 
@@ -26,7 +26,7 @@ body{
 }
 .input{
     display: flex;
-    gap: 19px;
+    gap: 46px;
 }
 .tareaAlgunMomento{
     display: flex;
